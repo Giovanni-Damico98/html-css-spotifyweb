@@ -1,0 +1,99 @@
+/* Reset dei margini, padding e box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Impostazioni generiche per il corpo del documento */
+body {
+    height: 100vh;
+}
+
+main {
+    height: 100%;
+    flex-direction: column;
+}
+
+/* Utils */
+.flex {
+    display: flex;
+}
+
+.flex-direction-col {
+    flex-direction: column;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #080B12;
+    height: 70px;
+    width: 100%;
+}
+
+/* Header Button */
+.upgrade-button {
+    height: 30px;
+    border-radius: 1rem;
+    padding: 0px 15px;
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+    border: solid 1px;
+    border-color: white;
+    font-size: 9px;
+}
+
+.click:active {
+    scale: 1.1;
+}
+
+/* Side-bar */
+.small-side-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 5%;
+    background-color: #000000;
+    color: white;
+    padding-top: 10px;
+
+}
+
+.small-side-bar img {
+    height: 30px;
+}
+
+.side-bar-top-img {
+    gap: 10px;
+    align-self: center;
+}
+
+.side-bar-bottom-img {
+    gap: 10px;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+.profile-img {
+    width: 32px;
+    border-radius: 1rem;
+    border: solid 1px;
+    background-color: grey;
+}
+
+#download-logo {
+    position: relative;
+    right: 2px;
+}
+
+footer {
+    height: 70px;
+    width: 100%;
+    background-color: #282828;
+}

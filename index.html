@@ -1,22 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Spotify Web</title>
-        <!-- Link ai file CSS -->
-        <link rel="stylesheet" href="/style.css" />
-        <link rel="stylesheet" href="/responsive.css" />
-        <!-- Link alle icone FontAwesome -->
-        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css'
-            integrity='sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=='
-            crossorigin='anonymous' />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    </head>
 
-    
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Web</title>
+    <!-- Link ai file CSS -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/responsive.css" />
+    <!-- Link alle icone FontAwesome -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css'
+        integrity='sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=='
+        crossorigin='anonymous' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+</head>
+
+
 <body>
-    
+    <main class="flex">
+
+        <header>
+            <button class="upgrade-button click">EFFETTUA L'UPGRADE</button>
+        </header>
+
+        <!-- Side-Bar -->
+        <nav class="small-side-bar">
+            <div class="side-bar-top-img flex flex-direction-col">
+                <img src="img/logo-small.svg" alt="" class="click">
+                <img src="img/home.svg" alt="" class="click">
+                <img src="img/search.svg" alt="" class="click">
+                <img src="img/libreria.svg" alt="" class="click">
+            </div>
+            <div class="side-bar-bottom-img flex flex-direction-col" class="click">
+                <img src="img/download.svg" alt="" id="download-logo" class="click">
+                <img src="img/profile.svg" alt="" class="profile-img" class="click">
+            </div>
+        </nav>
+
+        <div class="main-content"></div>
+
+        <footer class="flex">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </footer>
+
+    </main>
+
 </body>
+
 </html>
