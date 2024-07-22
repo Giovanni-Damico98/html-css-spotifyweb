@@ -24,14 +24,18 @@ main {
     flex-direction: column;
 }
 
-/* Header */
+/* CONTAINER */
+.container {
+    height: 90%;
+}
 
+/* Header */
 header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     background-color: #080B12;
-    height: 70px;
+    height: 10%;
     width: 100%;
 }
 
@@ -52,26 +56,42 @@ header {
     scale: 1.1;
 }
 
+/* MAIN CONTENT */
+.content {
+    height: 90%;
+    background-color: red;
+    width: 100%;
+}
+
+.main-content {
+    width: 100%;
+}
+
 /* Side-bar */
 .small-side-bar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    width: 5%;
+    width: 15%;
     background-color: #000000;
     color: white;
     padding-top: 10px;
-
 }
 
-.small-side-bar img {
-    height: 30px;
+.logo-img {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-img img {
+    height: 35px;
 }
 
 .side-bar-top-img {
     gap: 10px;
     align-self: center;
+    font-size: 14px;
 }
 
 .side-bar-bottom-img {
@@ -80,8 +100,11 @@ header {
     align-self: center;
 }
 
+.side-bar-bottom-img img {
+    height: 25px;
+}
+
 .profile-img {
-    width: 32px;
     border-radius: 1rem;
     border: solid 1px;
     background-color: grey;
@@ -92,8 +115,83 @@ header {
     right: 2px;
 }
 
+.side-bar-word {
+    align-items: center;
+    display: flex;
+    filter: brightness(0.5);
+}
+
+.side-bar-word:hover {
+    filter: none;
+    cursor: pointer;
+}
+
+.playlist {
+    position: relative;
+    right: 17px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.playlist span:not(#title) {
+    filter: brightness(0.5);
+}
+
+.playlist span:not(#title):hover {
+    filter: none;
+    cursor: pointer;
+}
+
+#title {
+    margin-left: -13px;
+}
+
+.playlist i {
+    font-size: 25px;
+    margin-right: 5px;
+    margin-left: 20px;
+}
+
+.playlist span {
+    display: flex;
+    align-items: center;
+}
+
+/* FOOTER */
 footer {
-    height: 70px;
+    height: 10%;
     width: 100%;
     background-color: #282828;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    max-width: 33%;
+    min-width: 33%;
+}
+
+.footer-left img {
+    height: 40px;
+    margin: 7px 10px 0px 10px;
+}
+
+#album-name {
+    color: white;
+}
+
+.song-name {
+    display: flex;
+    flex-wrap: wrap;
+    color: #727272;
+    gap: 5px;
+}
+
+.favourite-folder {
+    
 }

@@ -18,36 +18,92 @@
 
 
 <body>
-    <main class="flex">
 
-        <header>
-            <button class="upgrade-button click">EFFETTUA L'UPGRADE</button>
-        </header>
-
+    <div class="container flex">
         <!-- Side-Bar -->
         <nav class="small-side-bar">
+            <!-- PARTE SUPERIORE SIDEBAR -->
             <div class="side-bar-top-img flex flex-direction-col">
-                <img src="img/logo-small.svg" alt="" class="click">
-                <img src="img/home.svg" alt="" class="click">
-                <img src="img/search.svg" alt="" class="click">
-                <img src="img/libreria.svg" alt="" class="click">
+                <div class="logo-img">
+                    <img src="img/logo-small.svg" alt="" class="click" id="logo-small">
+                    <img src="img/logo.svg" alt="logo" class="click" id="logo">
+                </div>
+                <div class="side-bar-word">
+                    <img src="img/home.svg" alt="" class="click">
+                    <span class="click">Home</span>
+                </div>
+                <div class="side-bar-word">
+                    <img src="img/search.svg" alt="" class="click">
+                    <span class="click">Cerca</span>
+                </div>
+                <div class="side-bar-word">
+                    <img src="img/libreria.svg" alt="" class="click">
+                    <span class="click">La tua libreria</span>
+                </div>
             </div>
+            <!-- PARTE CENTRALE SIDEBAR -->
+            <div class="playlist">
+                <span id="title">PLAYLIST</span>
+                <span class="click"><i class="fa-sharp-duotone fa-solid fa-square-plus"></i>Crea Playlist</span>
+                <span class="click">Nome Playlist</span>
+                <span class="click">Nome Playlist</span>
+                <span class="click">Nome Playlist</span>
+                <span class="click">Nome Playlist</span>
+                <span class="click">Nome Playlist</span>
+                <span class="click">Nome Playlist</span>
+                <span class="click">Nome Playlist</span>
+            </div>
+            <!-- PARTE INFERIORE SIDEBAR -->
             <div class="side-bar-bottom-img flex flex-direction-col" class="click">
-                <img src="img/download.svg" alt="" id="download-logo" class="click">
-                <img src="img/profile.svg" alt="" class="profile-img" class="click">
+                <div class="side-bar-word">
+                    <img src="img/download.svg" alt="" id="download-logo" class="click">
+                    <span class="click">Installa app</span>
+                </div>
+                <div class="side-bar-word" id="profile-section">
+                    <img src="img/profile.svg" alt="" class="profile-img click">
+                    <span class="click">John Doe</span>
+                </div>
             </div>
         </nav>
 
-        <div class="main-content"></div>
+        <!--    CONTENUTO PRINCIPALE -->
+        <div class="main-content">
+            <header>
+                <button class="upgrade-button click">EFFETTUA L'UPGRADE</button>
+            </header>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ullam iste iure aspernatur
+                    molestiae,
+            </div>
+        </div>
+    </div>
 
-        <footer class="flex">
+    <!-- FOOTER -->
+    <footer class="flex">
+        <div class="footer-left">
+            <div>
+                <img src="img/sinister.jpeg" alt="">
+            </div>
+            <div class="song-info">
+                <span id="album-name">Sinister</span> <br>
+                <div class="song-name">
+                    <span>Brano</span>
+                    <span>Nome</span>
+                </div>
+                <div class="favourite-folder">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-mid">
             <div></div>
             <div></div>
-            <div></div>
-            <div></div>
-        </footer>
+        </div>
+        <div class="footer-right">
 
-    </main>
+        </div>
+    </footer>
 
 </body>
 

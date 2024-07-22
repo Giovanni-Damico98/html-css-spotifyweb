@@ -1,0 +1,57 @@
+@media screen and (max-width: 425px) {
+    #logo {
+        display: none;
+    }
+
+    .side-bar-word span {
+        display: none;
+    }
+
+    .small-side-bar {
+        min-width: 36px;
+        max-width: 36px;
+    }
+
+    .playlist {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 426px) {
+    #logo-small {
+        display: none;
+    }
+
+    .small-side-bar {
+        width: 25%;
+        min-width: 145px;
+        max-width: 145px;
+    }
+
+    .side-bar-bottom-img {
+        margin-left: -13px;
+    }
+
+    .side-bar-top-img img {
+        height: 30px;
+        margin-left: 10px;
+    }
+
+    #logo {
+        margin-left: -5px;
+    }
+
+    .side-bar-word img {
+        margin-right: 10px;
+    }
+
+    #profile-section {
+        filter: none;
+        border-top: #6D6D6D solid 1px;
+        padding-top: 10px;
+    }
+
+
+
+}
