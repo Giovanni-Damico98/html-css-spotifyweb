@@ -16,6 +16,9 @@
         display: none;
     }
 
+    .card-info {
+        min-width: 45%;
+    }
 
 
 
@@ -56,6 +59,16 @@
         padding-top: 10px;
     }
 
+    .card-info {
+        min-width: 45%;
+    }
 
 
+}
+
+@media screen and (min-width: 800px) {
+    .card-info {
+        min-width: 15%;
+        max-width: 175px;
+    }
 }
