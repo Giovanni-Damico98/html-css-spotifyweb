@@ -1,3 +1,4 @@
+/* Stili applicati per schermi con larghezza massima di 500px (dispositivi mobili piccoli) */
 @media screen and (max-width: 500px) {
     #logo {
         display: none;
@@ -19,12 +20,9 @@
     .card-info {
         min-width: 45%;
     }
-
-
-
-
 }
 
+/* Stili applicati per schermi con larghezza minima di 501px e fino a 799px */
 @media screen and (min-width: 501px) {
     #logo-small {
         display: none;
@@ -62,10 +60,9 @@
     .card-info {
         min-width: 45%;
     }
-
-
 }
 
+/* Stili applicati per schermi con larghezza minima di 800px (dispositivi grandi) */
 @media screen and (min-width: 800px) {
     .card-info {
         min-width: 15%;

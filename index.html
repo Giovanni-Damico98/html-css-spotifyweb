@@ -2,20 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web</title>
-    <!-- Link ai file CSS -->
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/responsive.css" />
-    <!-- Link alle icone FontAwesome -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/responsive.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css'
         integrity='sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=='
-        crossorigin='anonymous' />
+        crossorigin='anonymous'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 </head>
-
 
 <body>
 
@@ -24,11 +21,15 @@
         <nav class="small-side-bar">
             <!-- PARTE SUPERIORE SIDEBAR -->
             <div class="side-bar-top-img flex flex-direction-col">
+                <!-- Sezione superiore della barra laterale -->
                 <div class="logo-img">
+                    <!-- Immagini del logo -->
                     <img src="img/logo-small.svg" alt="" class="click" id="logo-small">
+                    <!-- Logo piccolo -->
                     <img src="img/logo.svg" alt="logo" class="click" id="logo">
+                    <!-- Logo grande -->
                 </div>
-                <div class="side-bar-word">
+                <div class="side-bar-word active">
                     <img src="img/home.svg" alt="" class="click">
                     <span class="click">Home</span>
                 </div>
@@ -41,10 +42,15 @@
                     <span class="click">La tua libreria</span>
                 </div>
             </div>
+
             <!-- PARTE CENTRALE SIDEBAR -->
             <div class="playlist">
+                <!-- Sezione delle playlist -->
                 <span id="title">PLAYLIST</span>
+                <!-- Titolo della sezione playlist -->
                 <span class="click"><i class="fa-sharp-duotone fa-solid fa-square-plus"></i>Crea Playlist</span>
+                <!-- Bottone per creare una nuova playlist -->
+                <!-- Altre playlist -->
                 <span class="click">Nome Playlist</span>
                 <span class="click">Nome Playlist</span>
                 <span class="click">Nome Playlist</span>
@@ -53,27 +59,35 @@
                 <span class="click">Nome Playlist</span>
                 <span class="click">Nome Playlist</span>
             </div>
+
             <!-- PARTE INFERIORE SIDEBAR -->
-            <div class="side-bar-bottom-img flex flex-direction-col" class="click">
+            <div class="side-bar-bottom-img flex flex-direction-col">
+                <!-- Sezione inferiore della barra laterale -->
                 <div class="side-bar-word">
+                    <!-- Elemento della barra laterale per installare l'app -->
                     <img src="img/download.svg" alt="" id="download-logo" class="click">
                     <span class="click">Installa app</span>
                 </div>
                 <div class="side-bar-word" id="profile-section">
+                    <!-- Sezione del profilo utente -->
                     <img src="img/profile.svg" alt="" class="profile-img click">
                     <span class="click">Giovanni</span>
                 </div>
             </div>
         </nav>
 
-        <!--    CONTENUTO PRINCIPALE -->
+        <!-- CONTENUTO PRINCIPALE -->
         <div class="main-content">
+            <!-- Sezione principale del contenuto -->
             <header>
+                <!-- Intestazione della pagina con bottone di upgrade -->
                 <button class="upgrade-button click">EFFETTUA L'UPGRADE</button>
             </header>
             <div class="content">
+                <!-- Sezione del contenuto -->
                 <div class="content-nav">
-                    <span class="click">IN EVIDENZA</span>
+                    <!-- Barra di navigazione del contenuto -->
+                    <span class="click active active-content-nav">IN EVIDENZA</span>
                     <span class="click">PODCAST</span>
                     <span class="click">CLASSIFICHE</span>
                     <span class="click">GENERI E MOOD</span>
@@ -82,10 +96,11 @@
                 </div>
 
                 <h3 class="content-title">Recently played</h3>
-
                 <div class="card recetly-played">
+                    <!-- Schede per gli elementi recentemente ascoltati -->
                     <div class="card-info">
                         <figure>
+                            <!-- Immagine e controllo di riproduzione -->
                             <img src="img/metal_lifting.jpg" alt="">
                             <div class="player">
                                 <i class="far fa-play-circle fa-2x"></i>
@@ -94,6 +109,7 @@
                         <h5>Heavy Metal</h5>
                         <h6>Subtitle</h6>
                     </div>
+                    <!-- Altre schede -->
                     <div class="card-info">
                         <figure>
                             <img src="img/stranger.jpeg" alt="">
@@ -101,8 +117,8 @@
                                 <i class="far fa-play-circle fa-2x"></i>
                             </div>
                         </figure>
-                        <h5>Heavy Metal</h5>
-                        <h6>Subtitle</h6>
+                        <h5>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h5>
+                        <h6>Kyle Nixon & Michael Stein</h6>
                     </div>
                     <div class="card-info">
                         <figure>
@@ -111,7 +127,7 @@
                                 <i class="far fa-play-circle fa-2x"></i>
                             </div>
                         </figure>
-                        <h5>Heavy Metal</h5>
+                        <h5>A quiet place</h5>
                         <h6>Subtitle</h6>
                     </div>
                     <div class="card-info">
@@ -121,7 +137,7 @@
                                 <i class="far fa-play-circle fa-2x"></i>
                             </div>
                         </figure>
-                        <h5>Heavy Metal</h5>
+                        <h5>Split</h5>
                         <h6>Subtitle</h6>
                     </div>
                     <div class="card-info">
@@ -131,7 +147,7 @@
                                 <i class="far fa-play-circle fa-2x"></i>
                             </div>
                         </figure>
-                        <h5>Heavy Metal</h5>
+                        <h5>A cure for wellness</h5>
                         <h6>Subtitle</h6>
                     </div>
                     <div class="card-info">
@@ -141,14 +157,17 @@
                                 <i class="far fa-play-circle fa-2x"></i>
                             </div>
                         </figure>
-                        <h5>Heavy Metal</h5>
+                        <h5>Sinister</h5>
                         <h6>Subtitle</h6>
                     </div>
                 </div>
 
                 <h3 class="content-title">Creato per Giovanni</h3>
+                <!-- Titolo della sezione "Creato per Giovanni" -->
                 <h5 class="content-small-title">Più ascolti, più accurati saranno i suggerimenti.</h5>
+                <!-- Sottotitolo della sezione -->
                 <div class="card for-you">
+                    <!-- Schede per suggerimenti personalizzati -->
                     <div class="card-info">
                         <figure>
                             <img src="img/radar.jpeg" alt="">
@@ -156,8 +175,7 @@
                                 <i class="far fa-play-circle fa-2x"></i>
                             </div>
                         </figure>
-                        <h5>Heavy Metal</h5>
-                        <h6>Subtitle</h6>
+                        <h5>Release Radar</h5>
                     </div>
                     <div class="card-info">
                         <figure>
@@ -166,39 +184,40 @@
                                 <i class="far fa-play-circle fa-2x"></i>
                             </div>
                         </figure>
-                        <h5>Heavy Metal</h5>
-                        <h6>Subtitle</h6>
+                        <h5>Daily Mix 1</h5>
                     </div>
                 </div>
 
                 <h3 class="content-title">Artisti più popolari</h3>
+                <!-- Titolo della sezione "Artisti più popolari" -->
                 <h5 class="content-small-title">Più ascolti, più accurati saranno i suggerimenti.</h5>
+                <!-- Sottotitolo della sezione -->
                 <div class="card popoular">
+                    <!-- Schede per artisti popolari -->
                     <div class="card-info">
-
                         <figure>
                             <img src="img/youg.jpeg" alt="">
                         </figure>
-                        <h5>Heavy Metal</h5>
-                        <h6>Subtitle</h6>
+                        <h5>Lana Del Rey</h5>
                     </div>
                     <div class="card-info">
                         <figure>
                             <img src="img/einaudi.jpeg" alt="">
                         </figure>
-                        <h5>Heavy Metal</h5>
-                        <h6>Subtitle</h6>
+                        <h5>Ludovico Einaudi</h5>
                     </div>
                 </div>
             </div>
 
             <!-- FOOTER -->
             <footer class="flex">
+                <!-- Sezione sinistra del footer -->
                 <div class="footer-left">
                     <div>
                         <img src="img/sinister.jpeg" alt="">
                     </div>
                     <div class="song-info">
+                        <!-- Informazioni sulla canzone -->
                         <span id="album-name">Sinister</span> <br>
                         <div class="song-name">
                             <span class="click">Brano</span>
@@ -206,13 +225,16 @@
                         </div>
                     </div>
                     <div class="favourite-folder">
+                        <!-- Icone per le azioni sui preferiti e sulle cartelle -->
                         <i class="fa-regular fa-heart click"></i>
                         <i class="fa-regular fa-folder click"></i>
                     </div>
                 </div>
 
+                <!-- Sezione centrale del footer -->
                 <div class="footer-mid">
                     <div class="song-button">
+                        <!-- Controlli per la riproduzione della canzone -->
                         <i class="fa-solid fa-shuffle click"></i>
                         <i class="fa-solid fa-backward-fast click"></i>
                         <i class="fa-regular fa-circle-play click"></i>
@@ -220,27 +242,34 @@
                         <i class="fa-solid fa-rotate-right click"></i>
                     </div>
                     <div class="song-progress">
+                        <!-- Barra di avanzamento della canzone -->
                         <span>0:25</span>
                         <div class="progress-bar">
+                            <!-- Barra di avanzamento -->
                             <div class="progress">
+                            <!-- Parte progressiva della barra -->
                             </div>
                         </div>
                         <span>4:35</span>
                     </div>
                 </div>
                 <div class="footer-right">
+                    <!-- Sezione destra del footer -->
                     <span><i class="fa-solid fa-list click"></i></span>
                     <span><i class="fa-solid fa-display click"></i></span>
                     <span><i class="fa-solid fa-volume-high click"></i></span>
                     <span class="sound-progress">
+                        <!-- Barra di avanzamento del volume -->
                         <span class="sound-progress-bar">
                             <span class="sound-progress-small">
+                                <!-- Parte progressiva della barra del volume -->
                             </span>
                         </span>
                     </span>
                 </div>
             </footer>
-
+        </div>
+    </div>       
 </body>
 
 </html>

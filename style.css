@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* Imposta margini e padding a 0 e box-sizing su border-box per garantire una gestione consistente delle dimensioni degli elementi */
 }
 
 /* Impostazioni generiche per il corpo del documento */
@@ -10,35 +11,42 @@ body {
     height: 100vh;
     min-width: 500px;
     overflow-x: hidden;
+    /* Imposta l'altezza del corpo al 100% dell'altezza della viewport e una larghezza minima di 500px. Nasconde lo scroll orizzontale */
 }
 
 main {
     height: 100%;
     flex-direction: column;
+    /* Imposta l'altezza del main al 100% e la direzione del flex su colonna */
 }
 
 /* Utils */
 .flex {
     display: flex;
+    /* Applica display flex per tutti gli elementi con la classe flex */
 }
 
 .flex-direction-col {
     flex-direction: column;
+    /* Applica la direzione della colonna ai contenitori flex */
 }
 
 .click:hover {
     color: white;
     cursor: pointer;
     scale: 1.1;
+    /* Cambia il colore del testo a bianco, il cursore a pointer e ingrandisce l'elemento al passaggio del mouse */
 }
 
 .click:active {
     scale: 1.2;
+    /* Ingrandisce ulteriormente l'elemento quando viene cliccato */
 }
 
 /* CONTAINER */
 .container {
-    height: 90%;
+    height: calc(100% - 50px);
+    /* Imposta l'altezza del container al 100% della viewport meno 50px */
 }
 
 /* Header */
@@ -47,8 +55,9 @@ header {
     justify-content: flex-end;
     align-items: center;
     background-color: #080B12;
-    height: 10%;
+    height: 50px;
     width: 100%;
+    /* Configura l'header come un contenitore flex, allinea gli elementi a destra e al centro verticalmente, e imposta lo sfondo e la dimensione */
 }
 
 /* Header Button */
@@ -62,18 +71,18 @@ header {
     border: solid 1px;
     border-color: white;
     font-size: 9px;
+    /* Imposta lo stile dei pulsanti nell'header, inclusi dimensione, colore, e border-radius */
 }
-
-
 
 /* MAIN CONTENT */
 .content {
     display: flex;
     flex-direction: column;
-    height: 90%;
+    height: 100%;
     background-color: #141922;
     width: 100%;
     overflow-y: auto;
+    /* Configura la sezione principale come un contenitore flex, con uno sfondo scuro e abilita lo scroll verticale */
 }
 
 .content-nav {
@@ -86,18 +95,21 @@ header {
     color: #727272;
     gap: 20px;
     margin: 20px;
+    /* Configura la barra di navigazione del contenuto come un contenitore flex centrato con stile di testo e spaziatura */
 }
 
 .content-title {
     margin: 30px 0px 0px 20px;
     font-size: 20px;
     color: white;
+    /* Imposta il margine e il colore del titolo del contenuto */
 }
 
 .content-small-title {
     margin: 10px 0px 0px 20px;
     color: #727272;
     font-size: 12px;
+    /* Configura il margine, il colore e la dimensione del titolo più piccolo del contenuto */
 }
 
 .card {
@@ -106,10 +118,12 @@ header {
     margin-top: 20px;
     margin-left: 20px;
     gap: 20px;
+    /* Configura le schede come un contenitore flex che si avvolge con margini e spaziatura tra gli elementi */
 }
 
 .card-info img {
     width: 100%;
+    /* Imposta le immagini all'interno delle schede per occupare il 100% della larghezza disponibile */
 }
 
 .card-info {
@@ -118,70 +132,74 @@ header {
     flex-direction: column;
     max-width: calc(100% / 7);
     text-align: center;
+    /* Configura le informazioni sulle schede come un contenitore flex in colonna con larghezza massima e centratura del testo */
 }
 
 .card-info figure {
     position: relative;
+    /* Imposta la posizione relativa per l'elemento figure all'interno delle informazioni della scheda */
 }
 
 .card-info .player {
     position: absolute;
-    /* Assicurati che questa linea sia presente per posizionamento assoluto */
     top: 0;
-    /* Posiziona l'elemento in alto */
     left: 0;
-    /* Posiziona l'elemento a sinistra */
     width: 100%;
-    /* Assicurati che il riquadro copra l'intera larghezza dell'immagine */
     height: 100%;
-    /* Assicurati che il riquadro copra l'intera altezza dell'immagine */
     background-color: rgba(0, 0, 0, 0.5);
-    /* Colore di sfondo semi-trasparente */
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     display: none;
+    /* Configura un overlay scuro su .player con testo centrato che è inizialmente nascosto */
 }
 
 .card-info figure:hover .player {
     display: flex;
+    /* Mostra l'overlay quando si passa il mouse su figure */
 }
 
 .card-info figure:hover {
     scale: 1.1;
+    /* Ingrandisce l'elemento figure al passaggio del mouse */
 }
 
 .card-info figure:active {
     scale: 1.2;
+    /* Ingrandisce ulteriormente l'elemento figure quando viene cliccato */
 }
 
 .card-info:not(:first-child) {
     text-align: center;
+    /* Centra il testo per tutte le schede tranne la prima */
 }
 
 .card h5 {
     color: white;
     margin: 10px 0px 5px 0px;
-
+    /* Configura il colore e i margini per l'elemento h5 all'interno della scheda */
 }
 
 .card-info h6 {
     color: #727272;
+    /* Imposta il colore per l'elemento h6 all'interno delle informazioni sulla scheda */
 }
 
 .main-content {
     width: 100%;
+    /* Imposta la larghezza del contenuto principale al 100% */
 }
 
 .popoular {
-    margin-bottom: 30px;
+    margin-bottom: 80px;
+    /* Imposta un margine inferiore per la sezione popolare */
 }
 
 .popoular img {
     border-radius: 5rem;
+    /* Configura il bordo dell'immagine nella sezione popolare con un raggio arrotondato */
 }
-
 
 /* Side-bar */
 .small-side-bar {
@@ -193,101 +211,165 @@ header {
     background-color: #000000;
     color: white;
     padding-top: 10px;
+    /* Configura la sidebar come un contenitore flex in colonna con spazio distribuito tra gli elementi e una larghezza fissa */
 }
 
 .logo-img {
     display: flex;
     justify-content: center;
+    /* Centra l'immagine del logo */
 }
 
 .logo-img img {
     height: 35px;
+    /* Imposta l'altezza dell'immagine del logo */
 }
 
 .side-bar-top-img {
     gap: 10px;
     align-self: center;
     font-size: 14px;
+    /* Configura la parte superiore della sidebar con un gap tra gli elementi e dimensione del testo */
 }
 
 .side-bar-bottom-img {
     gap: 10px;
     margin-bottom: 10px;
     align-self: center;
+    /* Configura la parte inferiore della sidebar con un margine inferiore e gap tra gli elementi */
 }
 
 .side-bar-bottom-img img {
     height: 25px;
+    /* Imposta l'altezza dell'immagine nella parte inferiore della sidebar */
 }
 
 .profile-img {
     border-radius: 1rem;
     border: solid 1px;
     background-color: grey;
+    /* Configura l'immagine del profilo con bordi arrotondati e uno sfondo grigio */
 }
 
 #download-logo {
     position: relative;
     right: 2px;
+    /* Imposta la posizione dell'elemento download-logo come relativa e spostata a destra di 2px */
 }
 
 .side-bar-word {
+    position: relative;
     align-items: center;
     display: flex;
     filter: brightness(0.5);
+    /* Configura le parole della sidebar con un filtro di luminosità iniziale */
 }
 
 .side-bar-word:hover {
     filter: none;
     cursor: pointer;
+    /* Rimuove il filtro di luminosità e cambia il cursore a pointer al passaggio del mouse */
 }
 
 .playlist {
     position: relative;
     overflow: auto;
-
+    height: 45%;
     right: 17px;
     font-size: 14px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px
+    gap: 10px;
+    /* Configura la playlist come un contenitore flex in colonna con overflow automatico e dimensioni relative */
 }
 
 .playlist span:not(#title) {
     filter: brightness(0.5);
+    /* Applica un filtro di luminosità alle voci della playlist eccetto il titolo */
 }
 
 .playlist span:not(#title):hover {
     filter: none;
     cursor: pointer;
+    /* Rimuove il filtro di luminosità e cambia il cursore a pointer al passaggio del mouse */
 }
 
 #title {
     margin-left: -13px;
+    /* Imposta un margine a sinistra negativo per il titolo */
 }
 
 .playlist i {
     font-size: 25px;
     margin-right: 5px;
     margin-left: 20px;
+    /* Configura la dimensione del font e i margini per le icone nella playlist */
 }
 
 .playlist span {
     display: flex;
     align-items: center;
+    /* Configura le voci della playlist come un contenitore flex con allineamento centrale */
+}
+
+.content-nav .click {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* Configura le voci di navigazione del contenuto con posizione relativa e centratura */
+}
+
+.side-bar-word.active {
+    filter: brightness(1);
+    /* Rimuove il filtro di luminosità per gli elementi della sidebar attivi */
+}
+
+.side-bar-word.active::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 5px;
+    background-color: #adff2f;
+    position: absolute;
+    left: -9px;
+    top: 0;
+    /* Aggiunge una barra colorata a sinistra per indicare l'elemento attivo nella sidebar */
+}
+
+.active::before {
+    content: "";
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 3px;
+    width: 40%;
+    background-color: #adff2f;
+    position: absolute;
+    bottom: -7px;
+    /* Aggiunge una barra colorata sotto gli elementi attivi di navigazione del contenuto */
+}
+
+.active-content-nav {
+    color: white;
+    font-size: 12px;
+    scale: 1.1;
+    cursor: default;
+    /* Configura lo stile per le voci di navigazione del contenuto attivo con colore e dimensioni del testo e disabilita il cursore */
 }
 
 /* FOOTER */
 footer {
-    height: 10%;
+    height: 50px;
     min-height: 50px;
     width: 100%;
     background-color: #282828;
     position: absolute;
     z-index: 1;
     right: 0px;
+    bottom: 0;
+    /* Configura il piè di pagina come un contenitore con altezza fissa, sfondo scuro e posizionato in basso */
 }
 
 .footer-left {
@@ -296,15 +378,18 @@ footer {
     font-size: 12px;
     width: 33%;
     min-width: 166px;
+    /* Configura la parte sinistra del piè di pagina come un contenitore flex con dimensioni e allineamento del testo */
 }
 
 .footer-left img {
     height: 35px;
     margin: 7px 10px 0px 10px;
+    /* Imposta l'altezza e i margini per le immagini nella parte sinistra del piè di pagina */
 }
 
 #album-name {
     color: white;
+    /* Imposta il colore del nome dell'album */
 }
 
 .song-name {
@@ -312,6 +397,7 @@ footer {
     flex-wrap: wrap;
     color: #727272;
     gap: 5px;
+    /* Configura il nome della canzone con colore e spaziatura */
 }
 
 .favourite-folder {
@@ -320,6 +406,7 @@ footer {
     margin-left: 20px;
     gap: 5px;
     color: #727272;
+    /* Configura la cartella dei preferiti con margini e spaziatura */
 }
 
 .footer-mid {
@@ -330,6 +417,7 @@ footer {
     width: 33%;
     color: white;
     gap: 10px;
+    /* Configura la parte centrale del piè di pagina come un contenitore flex in colonna con centratura e dimensioni */
 }
 
 .song-button {
@@ -338,16 +426,19 @@ footer {
     align-self: center;
     width: 50%;
     gap: 15%;
+    /* Configura i pulsanti della canzone con allineamento e dimensioni */
 }
 
 .song-progress {
     display: flex;
     gap: 5px;
     align-items: center;
+    /* Configura la barra di avanzamento della canzone con spaziatura tra gli elementi */
 }
 
 .song-progress span {
     font-size: 12px;
+    /* Imposta la dimensione del font per l'avanzamento della canzone */
 }
 
 .progress-bar {
@@ -357,16 +448,18 @@ footer {
     border-radius: 5px;
     overflow: hidden;
     position: relative;
+    /* Configura la barra di avanzamento come un contenitore con altezza, larghezza, colore di sfondo e bordi arrotondati */
 }
 
 .progress {
-    width: 20px;
+    width: 60px;
     height: 100%;
     background-color: gray;
     border-radius: 5px 0 0 5px;
     position: absolute;
     top: 0;
     left: 0;
+    /* Imposta la parte progressiva della barra con larghezza, colore e bordi arrotondati */
 }
 
 .sound-progress-bar {
@@ -376,6 +469,7 @@ footer {
     border-radius: 5px;
     overflow: hidden;
     position: relative;
+    /* Configura la barra di avanzamento del suono con le stesse proprietà della progress-bar */
 }
 
 .sound-progress {
@@ -383,16 +477,18 @@ footer {
     gap: 5px;
     align-items: center;
     width: 100px;
+    /* Configura la parte del suono come un contenitore flex con dimensioni e spaziatura */
 }
 
 .sound-progress-small {
-    width: 15px;
+    width: 70px;
     height: 100%;
     background-color: gray;
     border-radius: 5px 0 0 5px;
     position: absolute;
     top: 0;
     left: 0;
+    /* Imposta la parte del suono con larghezza, colore e bordi arrotondati */
 }
 
 .footer-right {
@@ -405,8 +501,10 @@ footer {
     color: white;
     gap: 5px;
     padding-right: 15px;
+    /* Configura la parte destra del piè di pagina come un contenitore flex con allineamento a destra e dimensioni */
 }
 
 .footer-right span {
     font-size: 12px;
+    /* Imposta la dimensione del font per gli elementi nella parte destra del piè di pagina */
 }
